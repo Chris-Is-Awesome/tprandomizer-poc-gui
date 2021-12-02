@@ -66,6 +66,11 @@ namespace TPRandomizer
             return  ((getItemCount(Item.Progressive_Sword) >= 1));
         }
 
+        public static bool hasBottle()
+        {
+            return canUse(Item.Empty_Bottle) || canUse(Item.Sera_Bottle) || canUse(Item.Jovani_Bottle) || (canUse(Item.Coro_Bottle) && canUse(Item.Lantern));
+        }
+
         public static bool canDefeatAeralfos()
         {
             return ((getItemCount(Item.Progressive_Clawshot) >= 1) ||
@@ -891,6 +896,29 @@ namespace TPRandomizer
         {
             //This is placeholder until I figure out how I want to do random dungeons. may remove it completely. Idk yet.
             return true;
+        }
+
+        /* Glitched Logic */
+
+        public static bool canDoLJA()
+        {
+            return hasSword() && canUse(Item.Boomerang);
+        }
+
+        public static bool canDoMapGlitch()
+        {
+            return canUse(Item.Shadow_Crystal);
+        }
+
+        public static bool canDoStorage()
+        {
+            return canDoMapGlitch() &&
+                (hasSword() || hasBottle() || canUse(Item.Progressive_Clawshot) || canUse(Item.Progressive_Bow) || canUse(Item.Progressive_Dominion_Rod) || canUse(Item.Lantern) || canUse(Item.Boomerang) || canUse(Item.Slingshot)); // Any one-handed item (except Fishing Rod)
+        }
+
+        public static bool canDoMoonBoots()
+        {
+            //
         }
 
         public static int getItemCount(Item itemToBeCounted)

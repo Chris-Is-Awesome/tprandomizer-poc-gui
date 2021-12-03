@@ -67,6 +67,11 @@ namespace TPRandomizer
             return  ((getItemCount(Item.Progressive_Sword) >= 1));
         }
 
+        public static bool hasWeakSword()
+		{
+            return canUse(Item.Ordon_Sword) || getItemCount(Item.Progressive_Sword) == 1;
+		}
+
         public static bool hasBottle()
         {
             return canUse(Item.Empty_Bottle) || canUse(Item.Sera_Bottle) || canUse(Item.Jovani_Bottle) ||
@@ -937,6 +942,11 @@ namespace TPRandomizer
         public static bool canDoBSMoonBoots()
 		{
             return canUse(Item.Back_Slice) && canUse(Item.Magic_Armor);
+		}
+
+        public static bool canDoEBMoonBoots()
+		{
+            return hasHeavyMod() && canUse(Item.Ending_Blow);
 		}
 
         public static bool canDoFlyGlitch()

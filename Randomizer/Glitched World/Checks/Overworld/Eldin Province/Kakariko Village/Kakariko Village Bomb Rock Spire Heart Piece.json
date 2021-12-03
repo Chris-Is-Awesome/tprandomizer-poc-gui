@@ -1,5 +1,5 @@
 {
-    "requirements": "canDoMapGlitch",
+    "requirements": "(canLaunchBombs and Boomerang) or canDoMapGlitch",
     "hash": "A573",
     "category": ["Overworld", "Chest", "Eldin Province"],
     "itemId": "Piece_of_Heart"

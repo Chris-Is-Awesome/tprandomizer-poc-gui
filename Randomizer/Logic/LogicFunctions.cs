@@ -61,15 +61,22 @@ namespace TPRandomizer
                     canUse(Item.Shadow_Crystal));
         }
 
-        public static bool hasSword()
+        public static bool hasSword(bool glitched = false)
         {
+            if (glitched) return getItemCount(Item.Progressive_Sword) >= 1 || canUse(Item.Back_Slice);
             return  ((getItemCount(Item.Progressive_Sword) >= 1));
         }
 
         public static bool hasBottle()
         {
-            return canUse(Item.Empty_Bottle) || canUse(Item.Sera_Bottle) || canUse(Item.Jovani_Bottle) || (canUse(Item.Coro_Bottle) && canUse(Item.Lantern));
+            return canUse(Item.Empty_Bottle) || canUse(Item.Sera_Bottle) || canUse(Item.Jovani_Bottle) ||
+                (canUse(Item.Coro_Bottle) && canUse(Item.Lantern));
         }
+
+        public static bool hasHeavyMod()
+		{
+            return canUse(Item.Iron_Boots) || canUse(Item.Magic_Armor);
+		}
 
         public static bool canDefeatAeralfos()
         {
@@ -905,6 +912,11 @@ namespace TPRandomizer
             return hasSword() && canUse(Item.Boomerang);
         }
 
+        public static bool canDoJumpStrikeLJA()
+		{
+            return hasSword() && canUse(Item.Boomerang) && canUse(Item.Jump_Strike);
+		}
+
         public static bool canDoMapGlitch()
         {
             return canUse(Item.Shadow_Crystal);
@@ -913,13 +925,24 @@ namespace TPRandomizer
         public static bool canDoStorage()
         {
             return canDoMapGlitch() &&
-                (hasSword() || hasBottle() || canUse(Item.Progressive_Clawshot) || canUse(Item.Progressive_Bow) || canUse(Item.Progressive_Dominion_Rod) || canUse(Item.Lantern) || canUse(Item.Boomerang) || canUse(Item.Slingshot)); // Any one-handed item (except Fishing Rod)
+                (hasSword() || hasBottle() || canUse(Item.Progressive_Clawshot) || canUse(Item.Progressive_Bow) ||
+                canUse(Item.Progressive_Dominion_Rod) || canUse(Item.Lantern) || canUse(Item.Boomerang) || canUse(Item.Slingshot));
         }
 
-        public static bool canDoMoonBoots()
+        public static bool canDoJSMoonBoots()
         {
-            //
+            return hasSword() && hasHeavyMod() && canUse(Item.Jump_Strike);
         }
+
+        public static bool canDoBSMoonBoots()
+		{
+            return canUse(Item.Back_Slice) && canUse(Item.Magic_Armor);
+		}
+
+        public static bool canDoFlyGlitch()
+		{
+            return canUse(Item.Progressive_Fishing_Rod) && hasHeavyMod();
+		}
 
         public static int getItemCount(Item itemToBeCounted)
 		{

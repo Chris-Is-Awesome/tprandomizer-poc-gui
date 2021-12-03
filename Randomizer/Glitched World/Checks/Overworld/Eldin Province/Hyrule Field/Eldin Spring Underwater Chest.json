@@ -1,5 +1,5 @@
 {
-    "requirements": "canSmash and Iron_Boots",
+    "requirements": "heavyMod and (canDoMapGlitch or (canDoStorage and hasSword and Zora_Armor))",
     "hash": "6C58",
     "category": ["Overworld", "Chest", "Eldin Province"],
     "itemId": "Piece_of_Heart"

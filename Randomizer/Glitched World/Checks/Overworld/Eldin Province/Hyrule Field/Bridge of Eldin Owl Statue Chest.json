@@ -1,6 +1,6 @@
 {
-    "requirements": "(Progressive_Dominion_Rod, 2)",
+    "requirements": "Shadow_Crystal or canLJA",
     "hash": "04B8",
-    "category": ["Overworld", "Chest", "Hyrule Field"],
+    "category": [ "Overworld", "Chest", "Hyrule Field" ],
     "itemId": "Piece_of_Heart"
 }

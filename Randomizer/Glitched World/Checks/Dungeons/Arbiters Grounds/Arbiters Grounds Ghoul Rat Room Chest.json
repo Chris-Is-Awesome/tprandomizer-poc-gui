@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatBubble and canDefeatStalchild and canDefeatRedeadKnight and (Arbiters_Grounds_Small_Key, 3)",
+    "hash": "05A6",
+    "category": ["Chest", "Dungeon", "Arbiters Grounds", "Small Key"],
+    "itemId": "Arbiters_Grounds_Small_Key"
+}

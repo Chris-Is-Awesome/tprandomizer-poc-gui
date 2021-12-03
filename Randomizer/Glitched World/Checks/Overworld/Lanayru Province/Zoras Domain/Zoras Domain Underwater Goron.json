@@ -1,0 +1,5 @@
+{
+    "requirements": "canUseWaterBombs and Iron_Boots",
+    "category": ["Overworld", "Npc", "Lanayru Province"],
+    "itemId": "Bomb_Bag_And_Bombs"
+}

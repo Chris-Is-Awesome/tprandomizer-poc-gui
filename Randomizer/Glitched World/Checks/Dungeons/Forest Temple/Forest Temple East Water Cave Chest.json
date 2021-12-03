@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatBombling or canBurnWebs",
+    "hash": "FAE5",
+    "category": ["Chest", "Dungeon", "Forest Temple"],
+    "itemId": "Yellow_Rupee"
+}

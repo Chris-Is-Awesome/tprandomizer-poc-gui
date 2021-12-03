@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatSkulltula and Lantern and canBreakWoodenDoor",
+    "hash": "A444",
+    "category": ["Overworld", "Chest", "Hyrule Field"],
+    "itemId": "Orange_Rupee"
+}

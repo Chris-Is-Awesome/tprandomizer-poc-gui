@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatDinalfos and canDefeatWalltula and canDefeatKargarok and Shadow_Crystal",
+    "hash": "6441",
+    "category": ["Chest", "Dungeon", "City in The Sky"],
+    "itemId": "Red_Rupee"
+}

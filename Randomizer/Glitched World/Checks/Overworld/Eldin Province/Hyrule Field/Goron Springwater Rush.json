@@ -1,0 +1,5 @@
+{
+    "requirements": "Gate_Keys or canSmash",
+    "category": ["Overworld", "Npc", "Hyrule Field"],
+    "itemId": "Piece_of_Heart"
+}

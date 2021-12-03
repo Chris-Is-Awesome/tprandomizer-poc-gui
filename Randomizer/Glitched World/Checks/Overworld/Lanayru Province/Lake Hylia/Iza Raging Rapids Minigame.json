@@ -1,0 +1,5 @@
+{
+    "requirements": "(Progressive_Bow, 1) and hasBombs",
+    "category": ["Overworld", "Npc", "Lanayru Province"],
+    "itemId": "Giant_Bomb_Bag"
+}

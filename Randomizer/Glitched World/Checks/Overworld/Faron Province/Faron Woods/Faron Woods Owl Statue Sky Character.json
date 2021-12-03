@@ -1,0 +1,5 @@
+{
+    "requirements": "canSmash and (Progressive_Dominion_Rod, 2)",
+    "category": ["Overworld", "Faron Woods", "Sky Book"],
+    "itemId": "Progressive_Sky_Book"
+}

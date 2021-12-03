@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatIceKeese and canDefeatFreezard and Ball_and_Chain",
+    "hash": "4584",
+    "category": ["Overworld", "Chest", "Snowpeak Province"],
+    "itemId": "Orange_Rupee"
+}

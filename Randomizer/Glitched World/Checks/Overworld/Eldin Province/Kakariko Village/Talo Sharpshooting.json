@@ -1,0 +1,5 @@
+{
+    "requirements": "canCompleteGoronMines",
+    "category": ["Overworld", "Npc", "Eldin Province"],
+    "itemId": "Piece_of_Heart"
+}

@@ -1,0 +1,6 @@
+{
+    "requirements": "Ball_and_Chain or (hasBombs and (Snowpeak_Ruins_Small_Key, 4))",
+    "hash": "E51D",
+    "category": ["Chest", "Dungeon", "Snowpeak Ruins"],
+    "itemId": "Bombs_5"
+}

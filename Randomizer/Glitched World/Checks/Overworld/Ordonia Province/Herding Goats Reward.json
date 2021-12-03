@@ -1,0 +1,5 @@
+{
+    "requirements": "canLeaveForest",
+    "category": ["Overworld", "Npc", "Ordonia Province"],
+    "itemId": "Piece_of_Heart"
+}

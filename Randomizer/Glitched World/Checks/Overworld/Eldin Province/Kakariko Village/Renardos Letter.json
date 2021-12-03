@@ -1,0 +1,5 @@
+{
+    "requirements": "canCompleteTempleofTime",
+    "category": ["Overworld", "Npc", "Eldin Province"],
+    "itemId": "Renardos_Letter"
+}

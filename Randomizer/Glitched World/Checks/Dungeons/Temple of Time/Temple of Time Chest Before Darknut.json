@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatArmos and canDefeatBabyGohma and canDefeatYoungGohma",
+    "hash": "1A52",
+    "category": ["Chest", "Dungeon", "Temple of Time"],
+    "itemId": "Purple_Rupee"
+}

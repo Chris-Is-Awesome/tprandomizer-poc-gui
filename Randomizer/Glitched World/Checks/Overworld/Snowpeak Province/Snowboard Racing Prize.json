@@ -1,0 +1,5 @@
+{
+    "requirements": "canCompleteSnowpeakRuins",
+    "category": ["Overworld", "Npc", "Snowpeak Province"],
+    "itemId": "Piece_of_Heart"
+}

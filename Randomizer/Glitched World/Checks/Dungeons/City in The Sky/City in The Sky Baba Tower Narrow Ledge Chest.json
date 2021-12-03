@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatBabaSerpent and canDefeatBigBaba and (Progressive_Clawshot, 2)",
+    "hash": "781F",
+    "category": ["Chest", "Dungeon", "City in The Sky"],
+    "itemId": "Red_Rupee"
+}

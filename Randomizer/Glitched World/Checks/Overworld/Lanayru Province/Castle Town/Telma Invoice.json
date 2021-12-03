@@ -1,0 +1,5 @@
+{
+    "requirements": "Renardos_Letter",
+    "category": ["Overworld", "Npc", "Castle Town"],
+    "itemId": "Invoice"
+}

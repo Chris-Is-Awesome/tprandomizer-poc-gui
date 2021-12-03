@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatArmos and hasRangedItem",
+    "hash": "C637",
+    "category": ["Chest", "Dungeon", "Temple of Time", "Dungeon Items", "Dungeon Map"],
+    "itemId": "Temple_of_Time_Dungeon_Map"
+}

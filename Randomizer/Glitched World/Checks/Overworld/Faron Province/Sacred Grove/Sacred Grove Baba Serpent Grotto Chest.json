@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatBabaSerpent and canKnockDownHangingBaba",
+    "hash": "F29C",
+    "category": ["Overworld", "Chest", "Sacred Grove"],
+    "itemId": "Piece_of_Heart"
+}

@@ -1,0 +1,6 @@
+{
+    "requirements": "canDefeatDinalfos and (Progressive_Dominion_Rod, 1)",
+    "hash": "D3B5",
+    "category": ["Chest", "Dungeon", "Temple of Time"],
+    "itemId": "Piece_of_Heart"
+}

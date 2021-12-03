@@ -1,0 +1,5 @@
+{
+    "requirements": "Invoice",
+    "category": ["Overworld", "Npc", "Hyrule Field"],
+    "itemId": "Wooden_Statue"
+}

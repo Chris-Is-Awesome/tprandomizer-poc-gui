@@ -1,0 +1,6 @@
+{
+    "requirements": "Ball_and_Chain or Boomerang or (Progressive_Clawshot, 1)",
+    "hash": "7E86",
+    "category": ["Overworld", "Chest", "Hyrule Field"],
+    "itemId": "Piece_of_Heart"
+}

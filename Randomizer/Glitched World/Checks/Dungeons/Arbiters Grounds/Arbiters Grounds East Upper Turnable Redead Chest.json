@@ -1,0 +1,6 @@
+{
+    "requirements": "hasDamagingItem and (Arbiters_Grounds_Small_Key, 2)",
+    "hash": "F20F",
+    "category": ["Chest", "Dungeon", "Arbiters Grounds", "Small Key"],
+    "itemId": "Arbiters_Grounds_Small_Key"
+}

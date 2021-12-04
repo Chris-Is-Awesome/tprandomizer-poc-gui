@@ -9,8 +9,8 @@
     "neighbourRequirements": 
     [
         "true",
-        "Lantern",
-        "Small_Key_N_Faron_Gate and (Lantern or Shadow_Crystal)"
+        "Lantern or canDoMapGlitch",
+        "Small_Key_N_Faron_Gate and (Lantern or Shadow_Crystal or canDoMapGlitch)"
     ],
     "isStartingRoom": "false",
     "checks": 

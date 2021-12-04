@@ -11,9 +11,9 @@
     "neighbourRequirements": 
     [
         "true",
-        "Gate_Keys",
+        "Gate_Keys or canDoMapGlitch",
         "true",
-        "Gate_Keys",
+        "true",
         "Shadow_Crystal"
     ],
     "isStartingRoom": "false",

@@ -1,5 +1,5 @@
 {
-    "requirements": "Spinner",
+    "requirements": "Spinner or canDoLJA",
     "hash": "4A9B",
     "category": ["Overworld", "Chest", "Sacred Grove"],
     "itemId": "Orange_Rupee"

@@ -1,5 +1,5 @@
 {
-    "requirements": "Lantern",
+    "requirements": "Lantern or canDoMapGlitch",
     "hash": "411C",
     "category": ["Overworld", "Chest", "Faron Woods"],
     "itemId": "Red_Rupee"

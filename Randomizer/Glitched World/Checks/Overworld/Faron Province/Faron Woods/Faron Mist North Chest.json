@@ -1,5 +1,5 @@
 {
-    "requirements": "Lantern",
+    "requirements": "Lantern or canDoMapGlitch",
     "hash": "BF66",
     "category": ["Overworld", "Chest", "Faron Woods"],
     "itemId": "Yellow_Rupee"

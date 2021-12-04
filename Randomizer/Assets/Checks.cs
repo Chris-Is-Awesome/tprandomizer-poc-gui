@@ -57,6 +57,11 @@ namespace TPRandomizer
                     {
                         if (currentCheck.category.Contains("Npc"))
                         {
+                            if (Randomizer.Items.ImportantItems.Contains(currentCheck.itemId))
+                            {
+                                Randomizer.Items.ImportantItems.Remove(currentCheck.itemId);
+                            }
+
                             Randomizer.Checks.vanillaChecks.Add(currentCheck.checkName);
                         }
                     }

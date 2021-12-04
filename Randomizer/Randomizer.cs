@@ -351,7 +351,7 @@ namespace TPRandomizer
 
         public void deserializeChecks()
         {
-            foreach (string file in System.IO.Directory.GetFiles("./Randomizer/World/Checks/", "*",SearchOption.AllDirectories))
+            foreach (string file in System.IO.Directory.GetFiles("./Randomizer/Glitched World/Checks/", "*",SearchOption.AllDirectories))
             {
                 string contents = File.ReadAllText(file);
                 string fileName = Path.GetFileNameWithoutExtension(file);
@@ -370,7 +370,7 @@ namespace TPRandomizer
 
         public void deserializeRooms()
         {
-            foreach (string file in System.IO.Directory.GetFiles("./Randomizer/World/Rooms/", "*", SearchOption.AllDirectories))
+            foreach (string file in System.IO.Directory.GetFiles("./Randomizer/Glitched World/Rooms/", "*", SearchOption.AllDirectories))
             {
                 string contents = File.ReadAllText(file);
                 string fileName = Path.GetFileNameWithoutExtension(file);

@@ -61,10 +61,14 @@ namespace TPRandomizer
                     canUse(Item.Shadow_Crystal));
         }
 
-        public static bool hasSword(bool glitched = false)
+        public static bool hasSword()
         {
-            if (glitched) return getItemCount(Item.Progressive_Sword) >= 1 || canUse(Item.Back_Slice);
             return  ((getItemCount(Item.Progressive_Sword) >= 1));
+        }
+
+        public static bool hasGlitchedSword()
+		{
+            return getItemCount(Item.Progressive_Sword) >= 1 || canUse(Item.Back_Slice);
         }
 
         public static bool hasWeakSword()
@@ -914,12 +918,12 @@ namespace TPRandomizer
 
         public static bool canDoLJA()
         {
-            return hasSword() && canUse(Item.Boomerang);
+            return hasGlitchedSword() && canUse(Item.Boomerang);
         }
 
         public static bool canDoJumpStrikeLJA()
 		{
-            return hasSword() && canUse(Item.Boomerang) && canUse(Item.Jump_Strike);
+            return hasGlitchedSword() && canUse(Item.Boomerang) && canUse(Item.Jump_Strike);
 		}
 
         public static bool canDoMapGlitch()
@@ -930,13 +934,13 @@ namespace TPRandomizer
         public static bool canDoStorage()
         {
             return canDoMapGlitch() &&
-                (hasSword() || hasBottle() || canUse(Item.Progressive_Clawshot) || canUse(Item.Progressive_Bow) ||
+                (hasGlitchedSword() || hasBottle() || canUse(Item.Progressive_Clawshot) || canUse(Item.Progressive_Bow) ||
                 canUse(Item.Progressive_Dominion_Rod) || canUse(Item.Lantern) || canUse(Item.Boomerang) || canUse(Item.Slingshot));
         }
 
         public static bool canDoJSMoonBoots()
         {
-            return hasSword() && hasHeavyMod() && canUse(Item.Jump_Strike);
+            return hasGlitchedSword() && hasHeavyMod() && canUse(Item.Jump_Strike);
         }
 
         public static bool canDoBSMoonBoots()
@@ -946,7 +950,7 @@ namespace TPRandomizer
 
         public static bool canDoEBMoonBoots()
 		{
-            return hasHeavyMod() && canUse(Item.Ending_Blow);
+            return hasGlitchedSword() && hasHeavyMod() && canUse(Item.Ending_Blow);
 		}
 
         public static bool canDoFlyGlitch()

@@ -269,6 +269,7 @@ namespace TPRandomizer
         public void parseSettingsString(string settingsString)
         {
             //Convert the settings string into a binary string to be interpreted.
+            settingsString = BackendFunctions.Base64Decode(settingsString);
             string bitString = BackendFunctions.textToBitString(settingsString);
             List<byte> bits = new List<byte>();
 			PropertyInfo[] properties = settings.GetType().GetProperties();

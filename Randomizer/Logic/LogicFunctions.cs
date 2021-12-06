@@ -66,27 +66,6 @@ namespace TPRandomizer
             return  ((getItemCount(Item.Progressive_Sword) >= 1));
         }
 
-        public static bool hasGlitchedSword()
-		{
-            return getItemCount(Item.Progressive_Sword) >= 1 || canUse(Item.Back_Slice);
-        }
-
-        public static bool hasWeakSword()
-		{
-            return canUse(Item.Ordon_Sword) || getItemCount(Item.Progressive_Sword) == 1;
-		}
-
-        public static bool hasBottle()
-        {
-            return canUse(Item.Empty_Bottle) || canUse(Item.Sera_Bottle) || canUse(Item.Jovani_Bottle) ||
-                (canUse(Item.Coro_Bottle) && canUse(Item.Lantern));
-        }
-
-        public static bool hasHeavyMod()
-		{
-            return canUse(Item.Iron_Boots) || canUse(Item.Magic_Armor);
-		}
-
         public static bool canDefeatAeralfos()
         {
             return ((getItemCount(Item.Progressive_Clawshot) >= 1) ||
@@ -916,14 +895,42 @@ namespace TPRandomizer
 
         /* Glitched Logic */
 
+        public static bool hasSwordOrBS()
+        {
+            return getItemCount(Item.Progressive_Sword) >= 1 || canUse(Item.Back_Slice);
+        }
+
+        public static bool hasWeakSword()
+        {
+            return canUse(Item.Ordon_Sword) || getItemCount(Item.Progressive_Sword) == 1;
+        }
+
+        public static bool hasBottle()
+        {
+            return canUse(Item.Empty_Bottle) || canUse(Item.Sera_Bottle) || canUse(Item.Jovani_Bottle) ||
+                (canUse(Item.Coro_Bottle) && canUse(Item.Lantern));
+        }
+
+        public static bool hasHeavyMod()
+        {
+            return canUse(Item.Iron_Boots) || canUse(Item.Magic_Armor);
+        }
+
+        // Any item that triggers a cutscene (ignores items that can be lost by completing quest (eg. invoice))
+        public static bool hasCutsceneItem()
+        {
+            return canUse(Item.Progressive_Sky_Book) || hasBottle() ||
+                canUse(Item.Horse_Call) || canUse(Item.Asheis_Sketch);
+        }
+
         public static bool canDoLJA()
         {
-            return hasGlitchedSword() && canUse(Item.Boomerang);
+            return hasSword() && canUse(Item.Boomerang);
         }
 
         public static bool canDoJumpStrikeLJA()
 		{
-            return hasGlitchedSword() && canUse(Item.Boomerang) && canUse(Item.Jump_Strike);
+            return hasSword() && canUse(Item.Boomerang) && canUse(Item.Jump_Strike);
 		}
 
         public static bool canDoMapGlitch()
@@ -934,13 +941,14 @@ namespace TPRandomizer
         public static bool canDoStorage()
         {
             return canDoMapGlitch() &&
-                (hasGlitchedSword() || hasBottle() || canUse(Item.Progressive_Clawshot) || canUse(Item.Progressive_Bow) ||
-                canUse(Item.Progressive_Dominion_Rod) || canUse(Item.Lantern) || canUse(Item.Boomerang) || canUse(Item.Slingshot));
+                (hasSword() || hasBottle() || canUse(Item.Progressive_Clawshot) ||
+                canUse(Item.Progressive_Bow) || canUse(Item.Progressive_Dominion_Rod) ||
+                canUse(Item.Lantern) || canUse(Item.Boomerang) || canUse(Item.Slingshot));
         }
 
         public static bool canDoJSMoonBoots()
         {
-            return hasGlitchedSword() && hasHeavyMod() && canUse(Item.Jump_Strike);
+            return hasSword() && hasHeavyMod() && canUse(Item.Jump_Strike);
         }
 
         public static bool canDoBSMoonBoots()
@@ -950,13 +958,24 @@ namespace TPRandomizer
 
         public static bool canDoEBMoonBoots()
 		{
-            return hasGlitchedSword() && hasHeavyMod() && canUse(Item.Ending_Blow);
+            return hasSword() && hasHeavyMod() && canUse(Item.Ending_Blow);
 		}
 
         public static bool canDoFlyGlitch()
 		{
             return canUse(Item.Progressive_Fishing_Rod) && hasHeavyMod();
 		}
+
+        // Drop bomb out of rang using cutscene item
+        public static bool canDoCutsceneBombDrop()
+		{
+            return hasBombs() && canUse(Item.Boomerang) && hasCutsceneItem();
+		}
+
+        public static bool canDoSwimWithWBs()
+        {
+            return canUseWaterBombs() && hasHeavyMod() && (hasSword() || canUse(Item.Progressive_Clawshot));
+        }
 
         public static int getItemCount(Item itemToBeCounted)
 		{

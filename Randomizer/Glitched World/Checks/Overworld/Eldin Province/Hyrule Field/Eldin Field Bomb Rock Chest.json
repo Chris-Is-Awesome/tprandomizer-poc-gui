@@ -1,5 +1,5 @@
 {
-    "requirements": "canSmash or canDoMapGlitch",
+    "requirements": "canSmash or canDoMapGlitch or (canDoEBMoonBoots and hasWeakSword and Boomerang)",
     "hash": "BBAC",
     "category": ["Overworld", "Chest", "Hyrule Field"],
     "itemId": "Piece_of_Heart"

@@ -1,5 +1,5 @@
 {
-    "requirements": "canDefeatShellBlade",
+    "requirements": "canDefeatShellBlade or canUseWaterBombs",
     "hash": "A6A6",
     "category": ["Overworld", "Chest", "Lanayru Province"],
     "itemId": "Orange_Rupee"

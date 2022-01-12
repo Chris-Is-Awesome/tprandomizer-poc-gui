@@ -19,8 +19,8 @@
         "true",
         "canSmash",
         "canSmash",
-        "Wooden_Statue",
-        "Shadow_Crystal and Spinner",
+        "Wooden_Statue or canEnterHiddenVillageGlitched",
+        "Shadow_Crystal and (Spinner or canEnterHiddenVillageGlitched)",
         "Shadow_Crystal",
         "Shadow_Crystal",
         "Lanayru Field Bridge Poe"

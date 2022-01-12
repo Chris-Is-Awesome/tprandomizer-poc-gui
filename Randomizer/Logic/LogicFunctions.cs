@@ -946,6 +946,11 @@ namespace TPRandomizer
                 canUse(Item.Lantern) || canUse(Item.Boomerang) || canUse(Item.Slingshot));
         }
 
+        public static bool canDoMoonBoots()
+        {
+            return hasSword() && hasHeavyMod();
+	    }
+
         public static bool canDoJSMoonBoots()
         {
             return hasSword() && hasHeavyMod() && canUse(Item.Jump_Strike);
@@ -975,6 +980,11 @@ namespace TPRandomizer
         public static bool canDoSwimWithWBs()
         {
             return canUseWaterBombs() && hasHeavyMod() && (hasSword() || canUse(Item.Progressive_Clawshot));
+        }
+
+        public static bool canEnterHiddenVillageGlitched()
+	    {
+            return canDoMoonBoots() && canUse(Item.Back_Slice) && canUse(Item.Boomerang);
         }
 
         public static int getItemCount(Item itemToBeCounted)
